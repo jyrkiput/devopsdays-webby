@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 sudo apt-get update
-sudo apt-get upgrade -y
-sudo apt-get install -y apache2 libonig-dev libxml2-dev libxslt-dev git git-doc
+DEBIAN_FRONTEND=noninteractive sudo apt-get upgrade -y
+sudo apt-get install -y apache2 libonig-dev libxml2-dev libxslt-dev git git-doc curl
 
 curl https://raw.githubusercontent.com/fesplugas/rbenv-installer/master/bin/rbenv-installer | bash
 
